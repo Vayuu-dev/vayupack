@@ -1,0 +1,468 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: #18181b;
+  color: #f4f4f5;
+  line-height: 1.5;
+}
+
+/* Layout */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-between: space-between;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-24 {
+  width: 6rem;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.h-800px {
+  height: 800px;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.relative {
+  position: relative;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border-zinc-700 {
+  border-color: #3f3f46;
+}
+
+.shadow-2xl {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.space-y-2 > * + * {
+  margin-top: 0.5rem;
+}
+
+.space-y-3 > * + * {
+  margin-top: 0.75rem;
+}
+
+.space-y-8 > * + * {
+  margin-top: 2rem;
+}
+
+/* Typography */
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.text-zinc-100 {
+  color: #f4f4f5;
+}
+
+.text-zinc-400 {
+  color: #a1a1aa;
+}
+
+.text-emerald-400 {
+  color: #34d399;
+}
+
+.bg-zinc-900 {
+  background-color: #18181b;
+}
+
+.bg-zinc-800 {
+  background-color: #27272a;
+}
+
+.bg-zinc-700 {
+  background-color: #3f3f46;
+}
+
+.bg-zinc-600 {
+  background-color: #52525b;
+}
+
+.bg-emerald-600 {
+  background-color: #10b981;
+}
+
+.bg-emerald-700 {
+  background-color: #047857;
+}
+
+/* Components */
+.avatar {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  overflow: hidden;
+  background-color: #10b981;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+}
+
+.btn-primary {
+  background-color: #10b981;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #047857;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #d4d4d8;
+  border: 1px solid #3f3f46;
+}
+
+.btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.375rem;
+  background-color: transparent;
+  color: #a1a1aa;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-icon:hover {
+  color: #f4f4f5;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.card {
+  background-color: #3f3f46;
+  border: 1px solid #52525b;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card-latest {
+  position: relative;
+  border: 2px solid #10b981;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-footer {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.separator {
+  height: 1px;
+  background-color: #52525b;
+  margin: 0.5rem 0;
+}
+
+.feature-item {
+  background-color: #27272a;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.version-tag {
+  display: inline-block;
+  background-color: #10b981;
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
+}
+
+.aspect-3-4 {
+  aspect-ratio: 3 / 4;
+}
+
+.gradient-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 33.333333%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+}
+
+/* Grids */
+.grid-screenshots {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.grid-stats-features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.grid-versions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.grid-category {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+/* Category cards */
+.category-card {
+  cursor: pointer;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.category-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Tab content */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+  .grid-screenshots {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .grid-stats-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-versions {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-category {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
