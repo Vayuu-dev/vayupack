@@ -20,7 +20,7 @@
 
 ## Aperçu
 
-![Aperçu des textures](\images\alambic.png)  
+![Aperçu des textures](images/alambic.png)  
 *Exemple de l’interface de jeu avec VayuPack - Immersion activé.*
 
 
@@ -36,7 +36,7 @@ Ce pack de textures est sous licence [ARR](https://en.wikipedia.org/wiki/All_rig
 
 ## Support
 
-Si tu rencontres des problèmes ou si tu as des suggestions pour améliorer VayuPack - Immersion, n’hésite pas à me contacter via mon serveur Discord [juste ici](https://discord.gg/JNH3d9vVWV)
+Si tu rencontres des problèmes ou si tu as des suggestions pour améliorer VayuPack - Immersion, n’hésite pas à me contacter via mon serveur [Discord](https://discord.gg/JNH3d9vVWV)
 
 ---
 
